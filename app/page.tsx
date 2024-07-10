@@ -78,10 +78,9 @@ export default function Home() {
   };
 
   return (
-    
     <div className="bg-blue-400 pt-8 pb-8 mx-auto sm:w-full p-4 md:p-8">
       <div className="max-w-5xl mx-auto p-6 bg-white shadow-black shadow-lg rounded-3xl">
-        <h1 className="text-5xl text-center font-extrabold mb-4">
+        <h1 className="text-5xl text-center text-black font-extrabold mb-4">
           AI Story Generator
         </h1>
         <h1 className="text-3xl font-sans text-blue-400 text-center font-bold mb-4">
@@ -108,7 +107,7 @@ export default function Home() {
             <select
               value={storyLength}
               onChange={(e) => setStoryLength(e.target.value)}
-              className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+              className="mt-1 block text-black w-full p-2 border border-gray-300 rounded-md"
             >
               <option value="short">Short</option>
               <option value="medium">Medium</option>
@@ -136,7 +135,7 @@ export default function Home() {
           <select
             value={narrativePerspective}
             onChange={(e) => setNarrativePerspective(e.target.value)}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+            className="mt-1 block w-full p-2 text-black border border-gray-300 rounded-md"
           >
             <option value="first">First Person</option>
             <option value="third">Third Person</option>
@@ -151,7 +150,7 @@ export default function Home() {
           <select
             value={genre}
             onChange={(e) => setGenre(e.target.value)}
-            className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
+            className="mt-1 block w-full p-2 text-black border border-gray-300 rounded-md"
           >
             <option value="romance">Romance</option>
             <option value="fantasy">Fantasy</option>
@@ -162,7 +161,7 @@ export default function Home() {
           </select>
         </div>
         <div className="mb-4">
-          <label className="block text-md font-bold text-black">
+          <label className="block text-md text-black font-bold text-black">
             Character Name (Optional)
           </label>
           <input
@@ -174,7 +173,7 @@ export default function Home() {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-md font-bold text-black">
+          <label className="block text-black text-md font-bold text-black">
             Character Description (Optional)
           </label>
           <input
@@ -207,7 +206,7 @@ export default function Home() {
           </button>
         </div>
         {generatedStory && (
-          <div className="mt-6 mb-6 p-4 bg-gray-100 border border-gray-300 rounded-3xl">
+          <div className="mt-6 text-black mb-6 p-4 bg-gray-100 border border-gray-300 rounded-3xl">
             <h2 className="text-2xl font-bold">Generated Story:</h2>
             <p>{generatedStory}</p>
             <div className="flex justify-end mt-2">
@@ -226,4 +225,4 @@ export default function Home() {
       </div>
     </div>
   );
-};
+}
