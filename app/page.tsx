@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-// import { FaCopy } from "react-icons/fa"; // Import the copy icon
+import { FaCopy } from "react-icons/fa"; // Import the copy icon
 // import axios from "axios";
-import Link from "next/link";
 
 export default function Home() {
   const [storyPlot, setStoryPlot] = useState("");
