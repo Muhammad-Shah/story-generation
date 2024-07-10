@@ -208,7 +208,7 @@ export default function Home() {
         {generatedStory && (
           <div className="mt-6 text-black mb-6 p-4 bg-gray-100 border border-gray-300 rounded-3xl">
             <h2 className="text-2xl font-bold">Generated Story:</h2>
-            <p>{generatedStory}</p>
+            <p className="text-black">{generatedStory}</p>
             <div className="flex justify-end mt-2">
               <button
                 onClick={handleCopyStory}
