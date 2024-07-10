@@ -169,7 +169,7 @@ export default function Home() {
             value={characterName}
             onChange={(e) => setCharacterName(e.target.value)}
             className="mt-1 block w-full outline-blue-400 p-2 border border-gray-300 rounded-md"
-            placeholder="Ex: Abdul Rehman"
+            placeholder="Ex: Jhon Doye"
           />
         </div>
         <div className="mb-4">
@@ -181,7 +181,7 @@ export default function Home() {
             value={characterDescription}
             onChange={(e) => setCharacterDescription(e.target.value)}
             className="mt-1 block w-full p-2 outline-blue-400 border border-gray-300 rounded-md"
-            placeholder="Ex: Abdul Rehman is a 22 years old boy who is studying in the university"
+            placeholder="Ex: Jhon Doye is a librarian who loves reading."
           />
         </div>
         <div className="mb-4">
