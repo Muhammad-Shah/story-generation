@@ -5,6 +5,7 @@ from api.generation import generate, complete
 
 app = FastAPI()
 
+
 class GenerateRequest(BaseModel):
     topic: str
     length: str
@@ -14,6 +15,7 @@ class GenerateRequest(BaseModel):
     character_name: Optional[str] = None
     character_description: Optional[str] = None
     setting_description: Optional[str] = None
+
 
 @app.post("/api/generate")
 def generate_story(request: GenerateRequest):
@@ -29,7 +31,8 @@ def generate_story(request: GenerateRequest):
     )
     return {"story": response}
 
-@app.get("/api/generates")
+
+@app.get("/api/story")
 def generate_story():
     response = "One Upon a time there was a man"
     return {"story": response}
