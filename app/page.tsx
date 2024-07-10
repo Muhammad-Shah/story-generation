@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-// import { FaCopy } from "react-icons/fa"; // Import the copy icon
+import { FaCopy } from "react-icons/fa"; // Import the copy icon
 // import axios from "axios";
 import Link from "next/link";
 
@@ -210,17 +210,17 @@ export default function Home() {
           <div className="mt-6 mb-6 p-4 bg-gray-100 border border-gray-300 rounded-3xl">
             <h2 className="text-2xl font-bold">Generated Story:</h2>
             <p>{generatedStory}</p>
-            {/* <div className="flex justify-end mt-2">
+             <div className="flex justify-end mt-2">
               <button
                 onClick={handleCopyStory}
                 className="flex items-center p-2 bg-blue-400 text-white font-bold rounded-md hover:cursor-pointer transition duration-100 hover:scale-105"
               >
                 <FaCopy className="mr-2" /> Copy
               </button>
-            </div> */}
-            {/* {copyStatus && (
+            </div> 
+             {copyStatus && (
               <p className="text-green-500 mt-2 text-right">{copyStatus}</p>
-            )} */}
+            )} 
           </div>
         )}
       </div>
