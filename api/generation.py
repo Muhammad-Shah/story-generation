@@ -1,13 +1,14 @@
-# import os
+import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq.chat_models import ChatGroq
 from langchain_core.messages import AIMessage, SystemMessage, HumanMessage
 # from dotenv import find_dotenv, load_dotenv
 
-dotenv_path = 'api\.env'
+# dotenv_path = 'api\.env'
 # load_dotenv(dotenv_path)
 # GROQ_API = os.getenv('GROQ_API')
-GROQ_API = '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'
+
+GROQ_API = os.environ.get('GROQ_API')
 
 
 def chat_model(temperature):
